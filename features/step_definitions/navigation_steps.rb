@@ -5,10 +5,10 @@ end
 # Verify with valid 
 When(/^I do the Login with valid data$/) do
     on(LoginPage).btnLogin_element.click
-    on(LoginPage).txtEmail = 'hmattos@avenuecode.com'
+    on(LoginPage).txtEmail = 'valid@gmail.com'
     on(LoginPage).btnNext_element.click
     sleep(2)
-    on(LoginPage).txtPassword = '123hyrla'
+    on(LoginPage).txtPassword = 'valid'
     on(LoginPage).btnSingin_element.click
 
 end
