@@ -1,10 +1,10 @@
 Feature: Access Profile into Superstars
 
-As an User
+As a User
 I want to access a profile into SuperStars
-So that I can manage a profile
+So that I should manage a profile
 
 Scenario: Fill profile
 Given I am on SuperStars ProfilePage
 When I fill in the page with valid data
-Then I can see the information saved
+Then I should see the information saved

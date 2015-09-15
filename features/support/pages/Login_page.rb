@@ -16,5 +16,7 @@ include DataMagic
 	span(:emailError, :id => 'errormsg_0_Email')
 	span(:passwordError, :id => 'errormsg_0_Passwd')
 
+	button(:authorize_access,:id => 'submit_approve_access')
+
 
 end
