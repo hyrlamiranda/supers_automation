@@ -1,6 +1,6 @@
 email_valid:
- txtemail: hmattos@avenuecode.com
- txtpassword: 123hyrla
+ txtemail: 
+ txtpassword: 
 
 email_invalid: 
 txtemail:
