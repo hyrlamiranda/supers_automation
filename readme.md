@@ -1,4 +1,4 @@
-## H2 Superstars Framework
+## Superstars Framework
 
 I`m using Cucumber + Ruby. Cucumber is written in the Ruby programming language. 
 
