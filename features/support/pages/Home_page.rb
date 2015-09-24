@@ -10,3 +10,9 @@ page_url 'http://superstars.avenuecode.com/#!/'
 	div(:userlist, :class => 'home-page-content')
 
 end
+
+
+	#def initialize_page
+	#	wait_until(20, "ERROR: Home Page not loaded"){ signin_page_element.visible? ||  user_page_element.visible? }
+	#end
+#end

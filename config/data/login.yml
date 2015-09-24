@@ -1,8 +1,9 @@
-email_valid:
- txtemail: 
- txtpassword: 
+valid_account:
+ login: email@email.com
+ password: -
+ invalid_password: -
 
-email_invalid: 
-txtemail:
-txtpassword:
+invalid_user:
+ login: email@email.com.br
+ password: -
 

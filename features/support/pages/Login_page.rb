@@ -18,30 +18,37 @@ class LoginPage
 
 	button(:authorize_access,:id => 'submit_approve_access')
 
-	def logIn
-		self.btnLogin_element.click
-	    self.txtEmail = 'valid@gmail.com'
+#def initialize_page
+#		 wait_until(20, "ERROR: Google Account Login page not loaded"){ txtEmail_element.visible? ||  txtPassword_element.visible?}
+#end
+
+	def login
+		login = YAML::load_file('config/data/login.yml')
+	  	self.btnLogin_element.click
+	    self.txtEmail = login['valid_account']['login']
 	    self.btnNext_element.click
 	    sleep(2)
-	    self.txtPassword = 'validpassword'
+	    self.txtPassword = login['valid_account']['password']
 	    self.btnSingin_element.click
 	end
 
 	def InvalidUser
+		login = YAML::load_file('config/data/login.yml')
 		self.btnLogin_element.click
-    	self.txtEmail = 'invalid@mail.com'
+    	self.txtEmail = login['invalid_user']['login']
     	self.btnNext_element.click
     	sleep(2)
-    	self.txtPassword = 'validpassword'
+    	self.txtPassword = login['invalid_user']['password']
     	self.btnSingin_element.click
     end
 
     def InvalidPass
+    	login = YAML::load_file('config/data/login.yml')
     	self.btnLogin_element.click
-    	self.txtEmail = 'valid@gmail.com'
+    	self.txtEmail = login['valid_account']['login']
     	self.btnNext_element.click
     	sleep(2)
-    	self.txtPassword = 'Invalidpassword'
+    	self.txtPassword = login['invalid_user']['password']
     	self.btnSingin_element.click
     end
 end
